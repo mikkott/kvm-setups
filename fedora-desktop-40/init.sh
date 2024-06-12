@@ -34,7 +34,7 @@ virt-install \
     --network network=default \
     --boot menu=on
 
-# Grant read and execute permissions to the user 'libvirt-qemu' for the current user's home directory and all its contents.
+# Grant read and execute permissions to the user 'libvirt-qemu'
 sudo setfacl -R -m u:libvirt-qemu:rx $HOME/qemu
 sudo setfacl -R -m u:libvirt-qemu:rx $HOME/Downloads
 
